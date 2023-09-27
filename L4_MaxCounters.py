@@ -122,7 +122,6 @@ def solution(N, A):
     for index, value in enumerate(counters):
         counters[index] = max(low_water, value)
 
-    return counters[1:]  # Trim away the extraneous counter for zero values.
 
 
 class TestExercise(unittest.TestCase):
